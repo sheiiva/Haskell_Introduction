@@ -49,3 +49,9 @@ myHead (x:_) = x
 myTail :: [a] -> [a]
 myTail [] = error "Empty list"
 myTail (_:xs) = xs
+
+-- A function which takes a list as argument and returns the number of
+-- elements in the list.
+myLength :: [a] -> Int
+myLength [] = 0
+myLength (_:xs) = 1 + myLength xs
