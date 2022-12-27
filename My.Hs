@@ -13,3 +13,7 @@ myAbs x = if x < 0 then -x else x
 -- A function which takes two Ints as arguments and returns the minimum of the two.
 myMin :: Int -> Int -> Int
 myMin x y = if x < y then x else y
+
+-- A function which takes two Ints as arguments and returns the maximum of the two.
+myMax :: Int -> Int -> Int
+myMax x y = if x > y then x else y
