@@ -21,3 +21,7 @@ myMax x y = if x > y then x else y
 -- A function which takes two arguments and return a tuple of those.
 myTuple :: a -> b -> (a, b)
 myTuple x y = (x, y)
+
+-- A function which takes three arguments and return a tuple of those.
+myTriple :: a -> b -> c -> (a, b, c)
+myTriple x y z = (x, y, z)
