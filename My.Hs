@@ -55,3 +55,10 @@ myTail (_:xs) = xs
 myLength :: [a] -> Int
 myLength [] = 0
 myLength (_:xs) = 1 + myLength xs
+
+-- A function which takes a list and an Int (N) as argument and returns the element at index N in the list, or an
+-- error if the index is too large or negative.
+myNth :: [a] -> Int -> a
+myNth [] _ = error "Empty list"
+myNth (x:_) 0 = x
+myNth (_:xs) n = myNth xs (n - 1)
