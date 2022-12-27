@@ -25,3 +25,7 @@ myTuple x y = (x, y)
 -- A function which takes three arguments and return a tuple of those.
 myTriple :: a -> b -> c -> (a, b, c)
 myTriple x y z = (x, y, z)
+
+-- A function which takes a tuple as argument and returns its first value.
+myFst :: (a, b) -> a
+myFst (x, _) = x
