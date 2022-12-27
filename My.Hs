@@ -33,3 +33,7 @@ myFst (x, _) = x
 -- A function which takes a tuple as argument and returns its second value.
 mySnd :: (a, b) -> b
 mySnd (_, y) = y
+
+-- A function which takes a tuple as argument and returns a new tuple, with it’s two values swaped.
+mySwap :: (a, b) -> (b, a)
+mySwap (x, y) = (y, x)
