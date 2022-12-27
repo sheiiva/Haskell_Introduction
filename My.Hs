@@ -9,3 +9,7 @@ myIsNeg x = x < 0
 -- A function which takes one Int as argument and returns it's absolute value.
 myAbs :: Int -> Int
 myAbs x = if x < 0 then -x else x
+
+-- A function which takes two Ints as arguments and returns the minimum of the two.
+myMin :: Int -> Int -> Int
+myMin x y = if x < y then x else y
