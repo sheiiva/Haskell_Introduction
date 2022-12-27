@@ -37,3 +37,9 @@ mySnd (_, y) = y
 -- A function which takes a tuple as argument and returns a new tuple, with it’s two values swaped.
 mySwap :: (a, b) -> (b, a)
 mySwap (x, y) = (y, x)
+
+-- A function which takes a list as argument and returns its first value. If the list is empty, an exception is raised
+-- with the function error.
+myHead :: [a] -> a
+myHead [] = error "Empty list"
+myHead (x:_) = x
