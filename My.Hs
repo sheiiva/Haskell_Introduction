@@ -43,3 +43,9 @@ mySwap (x, y) = (y, x)
 myHead :: [a] -> a
 myHead [] = error "Empty list"
 myHead (x:_) = x
+
+-- A function which takes a list as argument and returns a new list without
+-- its first element. If the list is empty, an exception is raised with the function error.
+myTail :: [a] -> [a]
+myTail [] = error "Empty list"
+myTail (_:xs) = xs
