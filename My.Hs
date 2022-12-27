@@ -17,3 +17,7 @@ myMin x y = if x < y then x else y
 -- A function which takes two Ints as arguments and returns the maximum of the two.
 myMax :: Int -> Int -> Int
 myMax x y = if x > y then x else y
+
+-- A function which takes two arguments and return a tuple of those.
+myTuple :: a -> b -> (a, b)
+myTuple x y = (x, y)
