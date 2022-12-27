@@ -29,3 +29,7 @@ myTriple x y z = (x, y, z)
 -- A function which takes a tuple as argument and returns its first value.
 myFst :: (a, b) -> a
 myFst (x, _) = x
+
+-- A function which takes a tuple as argument and returns its second value.
+mySnd :: (a, b) -> b
+mySnd (_, y) = y
